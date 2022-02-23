@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h1>Welcome to my shopping cart!</h1>
+    <a href="/addItem">Add Item</a>
+    <a href="/displayItems">Display Cart</a>
+    <br>
+    <strong>Session Expiry Time in Seconds: {{request.session.get_expiry_age}}</strong>
+    <br>
+    <strong>Session Expiry Time in Date: {{request.session.get_expiry_date}}</strong>
+</body>
+</html>
