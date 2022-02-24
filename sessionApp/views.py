@@ -14,6 +14,7 @@ def pageCount(request):
 def index(request):
     request.session.set_expiry(180)
     # del request.session['count']
+    raise Exception("Exception occurred in index view")
     return render(request, "sessionApp/index.html")
 
 
